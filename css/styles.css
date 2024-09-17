@@ -1,5 +1,4 @@
-html,
-body {
+html, body {
   height: 100%;
   margin: 0;
 }
@@ -15,7 +14,6 @@ body {
 }
 
 header {
-  /* background-color: #333; */
   color: #fff;
 }
 
@@ -53,10 +51,31 @@ header {
   text-decoration: none;
   padding: 10px 15px;
   display: block;
+  font-size: 30px;
+  font-weight: normal;
+  transition: font-size 0.3s ease, background-color 0.3s ease;
 }
 
 .nav-menu ul li a:hover {
   background-color: #555;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.nav-menu ul li a:visited {
+  /* color: #000; */
+  font-size: 20px;
+}
+
+.nav-menu ul li a:focus {
+  background-color: #444;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.nav-menu ul li a:active {
+  font-size: 24px;
+  font-weight: bold;
 }
 
 #nav-menu {
@@ -65,13 +84,13 @@ header {
   left: 0;
   width: 100%;
   height: 100%;
-  /* background-color: #333; */
   color: rgb(0, 0, 0);
   display: flex;
   justify-content: center;
   align-items: center;
   transform: translateY(-100%);
-  transition: transform 0.5s ease-in-out;
+  transition: transform 0.6s ease, background-color 0.6s ease;
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 #nav-menu.active {
@@ -80,6 +99,8 @@ header {
 
 #nav-menu ul {
   flex-direction: column;
+  font-size: 24px;
+  font-weight: bold;
 }
 
 #nav-menu ul li {
@@ -87,11 +108,11 @@ header {
 }
 
 .menu-toggle {
-  /* background-color: antiquewhite; */
-  font-size: 24px;
+  font-size: 25px;
   cursor: pointer;
-  color: #fcf8f8;
+  color: #020202;
 }
+
 main {
   flex: 1;
 }
