@@ -150,8 +150,9 @@ header {
 .about-header {
   position: relative;
   width: 100%;
-  height: 100vh; /* نفس الارتفاع الذي تستخدمه في header */
-  background: url('../images/about/pexels-anjreyes-465118.jpg') no-repeat center center/cover; /* نفس خصائص الخلفية */
+  height: 100vh; 
+  background: url("../images/about/pexels-anjreyes-465118.jpg") no-repeat center
+    center/cover; 
   display: flex;
   align-items: center;
   justify-content: center;
@@ -167,7 +168,7 @@ header {
 }
 
 .about-header .overlay {
-  display: none; /* إخفاء التعتيم فقط في صفحة About */
+  display: none; 
 }
 
 .about-header .intro {
@@ -176,7 +177,7 @@ header {
 }
 
 .about-header .intro h1 {
-  font-size: 3em; /* حجم النص */
+  font-size: 3em; 
   margin: 0;
   line-height: 1.2;
 }
@@ -197,7 +198,8 @@ header {
   overflow: hidden;
 }
 
-.project video, .project img {
+.project video,
+.project img {
   width: 100%;
 }
 
@@ -259,53 +261,54 @@ header {
 
 /* Interactive Section Styles */
 .interactive-section {
-    position: relative;
-    padding: 50px 0;
-    text-align: center;
-    background: #f9f9f9;
+  position: relative;
+  padding: 50px 0;
+  text-align: center;
+  background: #f9f9f9;
 }
 
 .background-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: url('../images/interactive-background.jpg') no-repeat center center/cover;
-    z-index: -1;
-    opacity: 0.5;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("../images/about/about.3jpeg.jpeg") no-repeat center
+    center/cover;
+  z-index: -1;
+  opacity: 0.5;
 }
 
 .content {
-    position: relative;
-    z-index: 2;
+  position: relative;
+  z-index: 2;
 }
 
 .cards {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
 }
 
 .card {
-    border: 2px solid #007bff;
-    border-radius: 50%;
-    width: 100px;
-    height: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 16px;
-    font-weight: bold;
-    color: #007bff;
-    cursor: pointer;
-    margin: 0 15px;
-    transition: background 0.3s, color 0.3s;
+  border: 2px solid #007bff;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: bold;
+  color: #007bff;
+  cursor: pointer;
+  margin: 0 15px;
+  transition: background 0.3s, color 0.3s;
 }
-.Company{
+.Company {
   background-color: brown;
 }
-.Mission{
+.Mission {
   border-color: black;
 }
 /* .card:hover {
@@ -314,20 +317,20 @@ header {
 } */
 
 .text-content {
-    display: none;
-    margin-top: 20px;
+  display: none;
+  margin-top: 20px;
 }
 
 .text-content.active {
-    display: block;
+  display: block;
 }
 
 .text-content h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
+  font-size: 24px;
+  margin-bottom: 10px;
 }
 
 .text-content p {
-    font-size: 16px;
-    line-height: 1.5;
+  font-size: 16px;
+  line-height: 1.5;
 }
