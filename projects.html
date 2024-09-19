@@ -4,39 +4,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gulf Development - Projects</title>
+    <title>Projects - Gulf</title>
+    <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <body>
+    <!-- Header -->
     <header>
+        <div class="overlay"></div>
         <div class="navbar">
             <div class="logo">
-                <a href="./index.html"><img src="./images/1708788417934-removebg-preview.png" alt="Logo" ></a>
+                <a href="./index.html"><img src="./images/Gulff-logo-191x70.png" alt="Logo"></a>
+            </div>
+            <div class="menu-toggle" onclick="toggleMenu()">☰ EXPLORE</div>
+        </div>
+        <div id="nav-menu">
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about.html">About Us</a></li>
+                <li><a href="./projects.html">Projects</a></li>
+                <li><a href="./gallery.html">Gallery</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+            <!-- </div>
+         <div class="intro text-center"> -->
+            <!-- <h1 class="upper">Our Projects</h1> -->
+        </div>
+
+
+        <!-- Projects Section -->
+        <section class="projects">
+            <div class="Project">
+                <img src="./images/projects/BADR-1-300x150.jpg" alt="Project 1 badr">
+                <h2>Badr</h2>
+            </div>
+            <div class="Project">
+                <img src="./images/projects/zayed-300x150.jpg" alt="Project 2 zayed">
+                <h2>Zayed</h2>
+            </div>
+
+            <div class="Project">
+                <video autoplay muted loop>
+                    <source src="./images/projects/comming-soon-gulf.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="Project">
+                <video autoplay muted loop>
+                    <source src="./images/projects/comming-soon-gulf.mp4" type="video/mp4">
+                </video>
+            </div>
 
             </div>
-            <nav class="nav-menu" id="nav-menu">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="gallery.html">Gallery</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-            <div class="menu-toggle" onclick="toggleMenu()">☰</div>
-        </div>
-    </header>
-    <main>
-        <section id="projects">
-            <h2>Projects</h2>
-            <p>Explore our latest projects and developments.</p>
         </section>
-    </main>
-    <footer>
-        <p>&copy; 2024 Gulf Development. All rights reserved.</p>
-    </footer>
-    <script src="scripts.js"></script>
+
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2024 Gulf Development. All rights reserved.</p>
+        </footer>
+
+        <script src="./js/script.js"></script>
 </body>
 
 </html>
