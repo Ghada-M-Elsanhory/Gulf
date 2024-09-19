@@ -4,39 +4,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gulf Development - About Us</title>
+    <title>About Us - Gulf</title>
+    <link rel="stylesheet" href="./css/jquery.bxslider.css">
+    <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <body>
-    <header>
+    <!--start header -->
+    <header class="about-header">
+        <!--start overlay -->
+        <div class="overlay"></div>
+        <!-- end overlay -->
+
         <div class="navbar">
             <div class="logo">
-                <a href="./index.html"><img src="./images/1708788417934-removebg-preview.png" alt="Logo"></a>
-
+                <a href="./index.html"><img src="./images/Gulff-logo-191x70.png" alt="Logo"></a>
             </div>
-            <nav class="nav-menu" id="nav-menu">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="./about.html">About Us</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="gallery.html">Gallery</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-            <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+            <div class="menu-toggle" onclick="toggleMenu()">☰ EXPLORE</div>
+        </div>
+
+        <div class="intro text-center">
+            <h1 class="upper">Empowering <br>Success</h1>
+        </div>
+
+        <!-- Navigation Menu -->
+        <div id="nav-menu">
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about.html">About Us</a></li>
+                <li><a href="./projects.html">Projects</a></li>
+                <li><a href="./gallery.html">Gallery</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
         </div>
     </header>
-    <main>
-        <section id="about">
-            <h2>About Us</h2>
-            <p>Learn more about our company and mission.</p>
-        </section>
-    </main>
+    <!-- end header -->
+
+    
+
     <footer>
         <p>&copy; 2024 Gulf Development. All rights reserved.</p>
     </footer>
-    <script src="scripts.js"></script>
+
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <script src="./js/jquery.bxslider.min.js"></script>
+    <script src="./js/jquery.mixitup.js"></script>
+    <script src="./js/jquery.nicescroll.min.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 
 </html>
