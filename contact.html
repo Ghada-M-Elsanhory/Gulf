@@ -1,42 +1,77 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="ar">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gulf Development - Contact</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./css/styles.css">
+    <title>Contact - Gulf</title>
 </head>
-
 <body>
     <header>
+        <div class="overlay"></div> 
+
         <div class="navbar">
             <div class="logo">
-                <a href="./index.html"><img src="./images/1708788417934-removebg-preview.png" alt="Logo"></a>
-
+                <a href="./index.html"><img src="./images/Gulff-logo-191x70.png" alt="Logo"></a>
             </div>
-            <nav class="nav-menu" id="nav-menu">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="gallery.html">Gallery</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-            <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+            <div class="menu-toggle" onclick="toggleMenu()">☰ EXPLORE</div>
+        </div>
+        <div class="intro text-center">
+            <h1 class="upper">Contact</h1>
+        </div>
+
+        <!-- Navigation Menu -->
+        <div id="nav-menu">
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about.html">About Us</a></li>
+                <li><a href="./projects.html">Projects</a></li>
+                <li><a href="./gallery.html">Gallery</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
         </div>
     </header>
-    <main>
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>Get in touch with us for more information.</p>
-        </section>
-    </main>
+
+    <section class="contact-us">
+        <h1>Get in Touch</h1>
+        <div class="contact-container">
+            <div class="contact-form">
+                <h2>Send Us a Message</h2>
+                <form action="#">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea placeholder="Message" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+            <div class="contact-info">
+                <h2>Contact Info</h2>
+                <p>Browse through our curated selection of properties, from charming starter homes to sprawling estates.</p>
+                <p><strong>Phone:</strong> +1 910-626-85255</p>
+                <p><strong>Location:</strong> Cairo, Egypt</p>
+                <p><strong>Email:</strong> info@gulf-egy.com</p>
+                <h3>Social Media</h3>
+                <div class="social-links">
+                    <a href="#">TikTok</a>
+                    <a href="#">Instagram</a>
+                    <a href="#">Facebook</a>
+                </div>
+            </div>
+        </div>
+        <div class="map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=... (map link)"
+                width="600" height="450" allowfullscreen="" loading="lazy">
+            </iframe>
+        </div>
+    </section>
+
     <footer>
         <p>&copy; 2024 Gulf Development. All rights reserved.</p>
     </footer>
-    <script src="scripts.js"></script>
-</body>
 
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
 </html>

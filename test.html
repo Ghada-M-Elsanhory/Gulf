@@ -5,10 +5,105 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gallery</title>
-    <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/jquery.bxslider.css">
+    <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/styles.css">
-    <link rel="stylesheet" href="./css/gallery.css"> <!-- إضافة ملف CSS الخاص بالمعرض -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+
+        header {
+            background: #0073e6;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        .logo img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .intro {
+            margin-top: 20px;
+            padding: 40px 0;
+            background: url('./images/about/pexels-anjreyes-465118.jpg') no-repeat center center;
+            background-size: cover;
+        }
+
+        .intro h1 {
+            font-size: 3em;
+            color: white;
+        }
+
+        #nav-menu ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        #nav-menu ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        #nav-menu ul li a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        #nav-menu ul li a:hover {
+            color: #ffcc00;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 15px;
+            padding: 20px;
+        }
+
+        .gallery-item {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+        }
+
+        .gallery-item:hover {
+            transform: scale(1.05);
+        }
+
+        .gallery-image img {
+            width: 100%;
+            height: auto;
+        }
+
+        .gallery-text {
+            padding: 10px;
+            text-align: center;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #0073e6;
+            color: white;
+        }
+    </style>
 </head>
 
 <body>
@@ -20,8 +115,7 @@
             </div>
             <div class="menu-toggle" onclick="toggleMenu()">☰ EXPLORE</div>
         </div>
-
-        <div class="intro text-center">
+        <div class="intro">
             <h1 class="upper">Gallery</h1>
         </div>
 
@@ -103,7 +197,6 @@
     <script src="./js/jquery.mixitup.js"></script>
     <script src="./js/jquery.nicescroll.min.js"></script>
     <script src="./js/script.js"></script>
-   
 </body>
 
 </html>
