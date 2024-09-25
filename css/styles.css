@@ -13,7 +13,6 @@ header {
   width: 100%;
   height: 100vh;
   background: url("../images/backgroundHome.png") no-repeat center center/cover;
-
   display: flex;
   align-items: center;
   justify-content: center;
@@ -79,7 +78,7 @@ header {
   list-style: none;
   padding: 0;
   margin: 0;
-  font-size: 24px;
+  font-size: 30px;
   font-weight: bold;
   display: flex;
   flex-direction: column;
@@ -92,6 +91,7 @@ header {
 
 #nav-menu ul li a {
   color: #fff;
+  font-size: 30px;
   text-decoration: none;
   padding: 10px 15px;
   display: block;
@@ -122,24 +122,23 @@ header {
 }
 
 .intro .look {
-  padding: 10px 20px;
+  padding: 15px 30px;
   font-size: 18px;
   color: #fff;
   background-color: #977739;
   border: none;
-  border-radius: 5px;
   cursor: pointer;
   display: flex;
   align-items: center;
   gap: 10px;
 }
 
-.intro .look:hover {
+/* .intro .look:hover {
   background-color: #0056b3;
-}
+} */
 
 .look {
-  margin-left: 350px;
+  margin-left: 450px;
 }
 
 .arrow {
@@ -269,7 +268,6 @@ header {
 }
 /* end about */
 /* start projects */
-
 .projects {
   margin: auto;
   width: 60%;
@@ -298,20 +296,17 @@ header {
 .project-text h2 {
   text-align: center;
   font-family: "Varela", sans-serif;
-
   font-weight: 900;
   color: white;
   size: 70px;
   line-height: 70px;
 }
-
 .project-video {
   display: flex;
 }
 .project-video .video-item {
   width: 50%;
 }
-
 .video-item {
   margin-top: 30px;
   margin-left: 10px;
@@ -320,14 +315,98 @@ header {
 .project-video video {
   width: 100%;
 }
-
 /* end projects */
 /* start gallery */
-.gallery {
-  background: url("../images/Gallery/backgallery.jpg") no-repeat center
-    center/cover;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* Header Section */
+.gallery-header {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  background: url("../images/backgallery.jpg") no-repeat center center/cover;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.background-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
+}
+
+.background-text h2 {
+  font-size: 60px;
+}
+
+/* Gallery Section */
+.gallery-section {
+  display: flex;
+  flex-wrap: wrap;
+  /* gap: 20px; */
+  justify-content: space-between;
+}
+
+.gallery-item {
+  width: calc(50%);
+  position: relative;
+  margin-bottom: 50px;
+  overflow: hidden;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.6s ease, opacity 0.6s ease;
+}
+.text-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-align: center;
+  color: #fff;
+  transition: background-color 0.6s ease;
+}
+
+.text-content h2 {
+  margin-bottom: 10px;
+}
+
+.text-content p {
+  font-size: 18px;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.1);
+  opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+  .gallery-item {
+    width: 100%;
+  }
+}
 /* end gallery */
 /* start contact */
 .contact-section {
@@ -336,31 +415,26 @@ header {
   text-align: center;
   z-index: 2;
 }
-
 .contact-section h1 {
   font-size: 2.5em;
   margin-bottom: 20px;
   color: #333;
 }
-
 .contact-container {
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
   margin: 40px 0;
 }
-
 .contact-form {
   flex: 1;
   margin-right: 20px;
 }
-
 .contact-form h2 {
   font-size: 2em;
   margin-bottom: 20px;
   color: #007bff;
 }
-
 .contact-form input,
 .contact-form textarea {
   width: 100%;
@@ -369,7 +443,6 @@ header {
   border: 1px solid #ccc;
   border-radius: 5px;
 }
-
 .contact-form button {
   padding: 10px 20px;
   background-color: #007bff;
@@ -378,22 +451,18 @@ header {
   border-radius: 5px;
   cursor: pointer;
 }
-
 .contact-form button:hover {
   background-color: #0056b3;
 }
-
 .contact-info {
   flex: 1;
   margin-left: 20px;
 }
-
 .contact-info h2 {
   font-size: 2em;
   margin-bottom: 20px;
   color: #007bff;
 }
-
 .contact-info p {
   margin: 10px 0;
   color: #666;
