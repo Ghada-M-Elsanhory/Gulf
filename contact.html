@@ -1,26 +1,37 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="./css/styles.css">
-    <title>Contact - Gulf</title>
+    <title>Contact Page</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+   <link rel="stylesheet" href="./css/styles.css">
+   <style>
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+    </style>
 </head>
-<body>
-    <header>
-        <div class="overlay"></div> 
 
+<body>
+    <!-- Header Section -->
+    <div class="contact-header">
+        <div class="overlay"></div>
         <div class="navbar">
             <div class="logo">
                 <a href="./index.html"><img src="./images/Gulff-logo-191x70.png" alt="Logo"></a>
             </div>
             <div class="menu-toggle" onclick="toggleMenu()">☰ EXPLORE</div>
         </div>
-        <div class="intro text-center">
-            <h1 class="upper">Contact</h1>
-        </div>
 
+        <div class="header-text">
+            <h1>Contact </h1>
+        </div>
         <!-- Navigation Menu -->
         <div id="nav-menu">
             <ul>
@@ -31,47 +42,51 @@
                 <li><a href="./contact.html">Contact</a></li>
             </ul>
         </div>
-    </header>
-
+    </div>
+    <!-- Contact Section -->
     <section class="contact-us">
-        <h1>Get in Touch</h1>
+        <span>Contact Us</span>
+        <h2>Get in Touch</h2>
+        <hr>
+
         <div class="contact-container">
+            <!-- Contact Form -->
             <div class="contact-form">
-                <h2>Send Us a Message</h2>
-                <form action="#">
+                <h3>Send Us a Message</h3>
+                <form>
                     <input type="text" placeholder="Your Name" required>
                     <input type="email" placeholder="Your Email" required>
-                    <textarea placeholder="Message" required></textarea>
+                    <textarea rows="5" placeholder="Your Message" required></textarea>
                     <button type="submit">Send Message</button>
                 </form>
             </div>
+
+            <!-- Contact Information -->
             <div class="contact-info">
-                <h2>Contact Info</h2>
-                <p>Browse through our curated selection of properties, from charming starter homes to sprawling estates.</p>
-                <p><strong>Phone:</strong> +1 910-626-85255</p>
-                <p><strong>Location:</strong> Cairo, Egypt</p>
-                <p><strong>Email:</strong> info@gulf-egy.com</p>
-                <h3>Social Media</h3>
-                <div class="social-links">
-                    <a href="#">TikTok</a>
-                    <a href="#">Instagram</a>
-                    <a href="#">Facebook</a>
+                <h3>Contact Information</h3>
+                <br>
+                <div class="contact-details">
+                    <p style="color: #b48842;"><i class="fas fa-phone-alt"></i> +123 456 7890</p>
+                    <p><i class="fas fa-envelope"></i> info@example.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Main Street, Anytown, USA</p>
+                </div>
+
+                <div class="social-media">
+                    <h2>Social Media</h2>
+                    <br>
+                    <a href="#" class="social-icon"><i class="fab fa-tiktok"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
                 </div>
             </div>
         </div>
-        <div class="map">
-            <iframe
-                src="https://www.google.com/maps/embed?pb=... (map link)"
-                width="600" height="450" allowfullscreen="" loading="lazy">
-            </iframe>
-        </div>
     </section>
 
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2024 Gulf Development. All rights reserved.</p>
+        <p>&copy; 2024 Your Company. All Rights Reserved.</p>
     </footer>
-
-    <script src="./js/jquery-3.7.1.min.js"></script>
-    <script src="./js/script.js"></script>
+  <script src="./js/script.js"></script>
 </body>
+
 </html>
